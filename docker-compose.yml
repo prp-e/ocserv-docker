@@ -1,0 +1,10 @@
+version: "3.0"
+services:
+  ocserv:
+    image: tommylau/ocserv
+    restart: always
+    container_name: ocserv
+    privileged: true
+    ports:
+      - 4443:443/udp
+      - 4443:443
